@@ -5,15 +5,20 @@ essential for building a Linux kernel. This small project aims to provide the
 missing headers and a short readme for those who (like me) wants to work with
 Linux on Mac as native as possible.
 
-For the beginning you should install `libefi` with
+## Building a Linux kernel
+
+1. Install `libefi` with
 
     brew install libefi
 
-Clone the repository and copy its files into `/usr/local/include`.
+2. Clone the repository and copy its files into `/usr/local/include`:
 
-Then install some GNU stuff to make feel kernel's Makefiles at home:
+    git clone git@github.com:vgribov/mac-linux-headers.git
+    cp -r mac-linux-headers/* /usr/local/include
 
-    brew install --with-default-names coreutils libtool gnu-sed grep
+3. Install some GNU stuff to make feel kernel's Makefiles at home:
+
+    brew install --with-default-names coreutils gnu-sed grep
 
 To make Linux ELF binaries you'll need a cross compiler. I found a nice one at
 <https://github.com/richfelker/musl-cross-make>.
