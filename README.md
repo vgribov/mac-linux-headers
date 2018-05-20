@@ -7,9 +7,9 @@ Linux on Mac as native as possible.
 
 ## Building a Linux kernel
 
-1. Install `libefi` with
+1. Install `libelf` with
 
-    brew install libefi
+    brew install libelf
 
 2. Clone the repository and copy its files into `/usr/local/include`:
 
