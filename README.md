@@ -53,20 +53,22 @@ go to <mailto:renaud.pacalet@telecom-paristech.fr>.
     cd ./build
     make menuconfig
 
-3. Configure the kernel according the following:
+3. Configure the kernel according to the following:
 
-    64-bit kernel ---> yes
-    General setup ---> Initial RAM filesystem and RAM disk (initramfs/initrd) support ---> yes
-    General setup ---> Configure standard kernel features ---> Enable support for printk ---> yes
-    Executable file formats / Emulations ---> Kernel support for ELF binaries ---> yes
-    Executable file formats / Emulations ---> Kernel support for scripts starting with #! ---> yes
-    Device Drivers ---> Generic Driver Options ---> Maintain a devtmpfs filesystem to mount at /dev ---> yes
-    Device Drivers ---> Generic Driver Options ---> Automount devtmpfs at /dev, after the kernel mounted the rootfs ---> yes
-    Device Drivers ---> Character devices ---> Enable TTY ---> yes
-    Device Drivers ---> Character devices ---> Serial drivers ---> 8250/16550 and compatible serial support ---> yes
-    Device Drivers ---> Character devices ---> Serial drivers ---> Console on 8250/16550 and compatible serial port ---> yes
-    File systems ---> Pseudo filesystems ---> /proc file system support ---> yes
-    File systems ---> Pseudo filesystems ---> sysfs file system support ---> yes
+<pre>
+64-bit kernel ---> yes
+General setup ---> Initial RAM filesystem and RAM disk (initramfs/initrd) support ---> yes
+General setup ---> Configure standard kernel features ---> Enable support for printk ---> yes
+Executable file formats / Emulations ---> Kernel support for ELF binaries ---> yes
+Executable file formats / Emulations ---> Kernel support for scripts starting with #! ---> yes
+Device Drivers ---> Generic Driver Options ---> Maintain a devtmpfs filesystem to mount at /dev ---> yes
+Device Drivers ---> Generic Driver Options ---> Automount devtmpfs at /dev, after the kernel mounted the rootfs ---> yes
+Device Drivers ---> Character devices ---> Enable TTY ---> yes
+Device Drivers ---> Character devices ---> Serial drivers ---> 8250/16550 and compatible serial support ---> yes
+Device Drivers ---> Character devices ---> Serial drivers ---> Console on 8250/16550 and compatible serial port ---> yes
+File systems ---> Pseudo filesystems ---> /proc file system support ---> yes
+File systems ---> Pseudo filesystems ---> sysfs file system support ---> yes
+</pre>
 
 4. Build the kernel:
 
